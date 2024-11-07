@@ -1,0 +1,131 @@
+body {
+    font-family: "Trebuchet MS", sans-serif;
+    background: url(/images/download.webp) no-repeat center center fixed;
+    background-size: cover;
+    background-blend-mode: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+.container {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    max-width: 400px;
+    max-height: 620px;
+    padding: 32px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    border: 4px solid #c6c6c6;
+    background-color: #1a1a1a;
+    opacity: 1;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 8px;
+    color: #39ff14;
+    font-size: 19px;
+    border: 2px solid #39ff14;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+label {
+    color: #fff;
+}
+
+h1 {
+    color: #fff;
+    font-size: 35px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #39ff14;
+    border-radius: 4px;
+    font-size: 13px;
+    background-color: #0a0a0a;
+    color: #39ff14;
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button,
+#google-sign-up {
+    width: 100%;
+    padding: 8px;
+    margin: 4px;
+    border: none;
+    border-radius: 4px;
+    background-color: #39ff14;
+    color: #0a0a0a;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out, transform 0.3s ease-in-out;
+    border: 1px solid #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button:hover,
+#google-sign-up:hover {
+    background-color: #28a708;
+}
+
+p {
+    text-align: center;
+    color: #39ff14;
+    margin-top: 16px;
+}
+
+a {
+    color: #39ff14;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.Google {
+    text-align: center;
+    margin-top: 8px;
+}
+
+#google-sign-up {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#google-sign-up img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}

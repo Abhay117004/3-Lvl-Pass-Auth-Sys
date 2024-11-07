@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Security Question</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+            <h2>Answer Security Question</h2>
+            <br><br>
+            <form id="security-question-form">
+                <label for="question">Security Question:</label>
+                <input type="text" id="security-question" placeholder="Your question will appear here" readonly><br><br>
+
+                <label for="answer">Answer:</label>
+                <input type="text" id="answer" placeholder="Your answer" required><br><br>
+
+                <div class="navigation">
+                    <button type="submit">Verify Answer</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/config/questions.js" type="module"></script>
+</body>
+</html>

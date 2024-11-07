@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter PIN</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Enter PIN</h2>
+        <form id="pin-form">
+            <label for="pin">PIN (first 4 digits of your birth year):</label>
+            <input type="password" id="pin" placeholder="Enter PIN" required minlength="4" maxlength="4" pattern="\d{4}">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <script src="/config/pin.js" type="module"></script>
+</body>
+</html>
